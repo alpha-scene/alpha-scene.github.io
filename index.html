@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>AlphaScene</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
+      padding: 0;
       font-family: 'Segoe UI', sans-serif;
       background: url('background.jpg') no-repeat center center fixed;
       background-size: cover;
@@ -15,131 +20,140 @@
     }
 
     header {
-      padding: 60px 20px 20px;
-      background: #222;
+      padding: 80px 20px 20px;
+      background-color: transparent;
     }
 
     h1 {
-      font-size: 3em;
+      color: transparent;
+      text-shadow: none;
+      font-size: 2.5rem;
       margin: 0;
-      text-shadow: 2px 2px #000;
-    }
-
-    .tagline {
-      font-size: 1.2em;
-      margin-top: 10px;
-      color: #ccc;
     }
 
     section {
-      padding: 40px 20px;
+      padding: 30px 15px;
+      margin: 0 auto;
       max-width: 800px;
-      margin: auto;
     }
 
-    iframe {
+    .video-section {
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 30px 15px;
+      border-radius: 15px;
+      margin-top: 60px;
+    }
+
+    .video-section h2 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+
+    .responsive-iframe {
+      position: relative;
       width: 100%;
-      height: 400px;
-      max-width: 700px;
+      padding-bottom: 56.25%;
+      height: 0;
+    }
+
+    .responsive-iframe iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
       border: none;
     }
 
+    .quote-section h2 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+    }
+
+    .quote-section p {
+      margin-top: 20px;
+      color: #dddddd;
+      font-size: 1.1rem;
+      font-style: italic;
+      text-shadow: 0 0 6px rgba(255, 255, 255, 0.15);
+    }
+
+    .socials h2 {
+      margin-bottom: 15px;
+      font-size: 1.3rem;
+    }
+
     .socials a {
-      margin: 0 10px;
+      display: inline-block;
+      margin: 8px 12px;
       color: #0af;
       text-decoration: none;
       font-weight: bold;
+      font-size: 1rem;
     }
 
     .merch {
       margin-top: 40px;
       font-style: italic;
       color: #aaa;
+      font-size: 1rem;
     }
 
-    /* Mobile responsiveness */
-    @media (max-width: 600px) {
+    /* Larger screens */
+    @media (min-width: 768px) {
       h1 {
-        font-size: 2em;
+        font-size: 3.5rem;
       }
 
-      section {
-        padding: 20px 15px;
+      .video-section h2,
+      .quote-section h2 {
+        font-size: 2rem;
       }
 
-      iframe {
-        height: 220px;
+      .quote-section p {
+        font-size: 1.3rem;
       }
 
-      h2 {
-        font-size: 1.4em;
-      }
-
-      .tagline {
-        font-size: 1em;
-      }
-
-      .merch {
-        font-size: 0.95em;
+      .socials a {
+        font-size: 1.1rem;
       }
     }
   </style>
 </head>
 <body>
 
-  <header style="background-color: transparent; padding: 80px 20px; text-align: center;">
-    <h1 style="color: transparent; text-shadow: none;">AlphaScene</h1>
+  <header>
+    <h1>AlphaScene</h1>
   </header>
 
-  <section style="
-    margin-top: 100px;
-    background-color: rgba(0, 0, 0, 0.4);
-    padding: 40px;
-    border-radius: 15px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  ">
-    <h2 style="color: #fff; font-size: 1.8em; margin-bottom: 20px;">
-      🔥 Featured Gameplay
-    </h2>
-    <iframe src="https://www.youtube.com/embed/VIDEO_ID"
-      width="100%" height="400"
-      frameborder="0" allowfullscreen>
-    </iframe>
+  <section class="video-section">
+    <h2>🔥 Featured Gameplay</h2>
+    <div class="responsive-iframe">
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+    </div>
   </section>
 
-  <section style="text-align: center; padding: 40px 20px;">
-    <h2 style="
-      color: #ffffff;
-      font-weight: 600;
-      font-size: 2em;
-      text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
-    ">
-      "Victory is reserved for those who are willing to pay its price".
-    </h2>
-    <p style="
-      margin-top: 20px;
-      color: #dddddd;
-      font-size: 1.1em;
-      font-style: italic;
-      text-shadow: 0 0 6px rgba(255, 255, 255, 0.15);
-    ">
-      AlphaScene. For the leaders, the creators, the ones who never follow.
-    </p>
+  <section class="quote-section">
+    <h2>"Victory is reserved for those who are willing to pay its price".</h2>
+    <p>AlphaScene. For the leaders, the creators, the ones who never follow.</p>
   </section>
 
   <section class="socials">
     <h2>🔗 Connect</h2>
     <a href="https://www.youtube.com/@AlphaScene" target="_blank">YouTube</a>
-    <a href="https://www.tiktok.com/@alpha_scene" target="_blank">Follow on TikTok</a>
+    <a href="https://www.tiktok.com/@alpha_scene" target="_blank">TikTok</a>
     <a href="https://www.instagram.com/AlphaScene" target="_blank">Instagram</a>
+    <a href="mailto:contact@alphascene.co.uk">Email</a>
   </section>
 
   <section class="merch">
     👕 Merch Coming Soon – Stay Frosty
   </section>
+
+</body>
+</html>
+
 
 </body>
 </html>
