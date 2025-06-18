@@ -23,9 +23,10 @@
 /* Switch to mobile-specific background on small screens */
 @media (max-width: 768px) {
   body {
-    background: url('mobile-background.jpeg') no-repeat center top;
-    background-size: cover;
+    background: url('mobile-background.jpg') no-repeat center top;
+    background-size: contain; /* Shrinks image to fit */
     background-attachment: scroll;
+    background-repeat: no-repeat;
   }
 }
     header {
