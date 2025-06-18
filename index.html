@@ -13,17 +13,19 @@
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: url('background.jpg') no-repeat center center fixed;
+  background: url('background.jpg') no-repeat center center;
   background-size: cover;
+  background-attachment: fixed;
   color: #fff;
   text-align: center;
 }
 
+/* Switch to mobile-specific background on small screens */
 @media (max-width: 768px) {
   body {
-    background: url('background-mobile.jpg') no-repeat center center scroll;
+    background: url('mobile-background.jpg') no-repeat center top;
     background-size: cover;
-    background-position: center top;
+    background-attachment: scroll;
   }
 }
     header {
