@@ -6,48 +6,82 @@
   <title>AlphaScene</title>
   <style>
     body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: url('background.jpg') no-repeat center center fixed;
-  background-size: cover;
-  color: #fff;
-  text-align: center;
-}
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      text-align: center;
+    }
+
     header {
       padding: 60px 20px 20px;
       background: #222;
     }
+
     h1 {
       font-size: 3em;
       margin: 0;
       text-shadow: 2px 2px #000;
     }
+
     .tagline {
       font-size: 1.2em;
       margin-top: 10px;
       color: #ccc;
     }
+
     section {
       padding: 40px 20px;
       max-width: 800px;
       margin: auto;
     }
+
     iframe {
       width: 100%;
       height: 400px;
       max-width: 700px;
       border: none;
     }
+
     .socials a {
       margin: 0 10px;
       color: #0af;
       text-decoration: none;
       font-weight: bold;
     }
+
     .merch {
       margin-top: 40px;
       font-style: italic;
       color: #aaa;
+    }
+
+    /* Mobile responsiveness */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      section {
+        padding: 20px 15px;
+      }
+
+      iframe {
+        height: 220px;
+      }
+
+      h2 {
+        font-size: 1.4em;
+      }
+
+      .tagline {
+        font-size: 1em;
+      }
+
+      .merch {
+        font-size: 0.95em;
+      }
     }
   </style>
 </head>
@@ -58,52 +92,49 @@
   </header>
 
   <section style="
-  margin-top: 100px;
-  background-color: rgba(0, 0, 0, 0.4);
-  padding: 40px;
-  border-radius: 15px;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-">
-  <h2 style="color: #fff; font-size: 1.8em; margin-bottom: 20px;">
-    🔥 Featured Gameplay
-  </h2>
-  <iframe src="https://www.youtube.com/embed/VIDEO_ID"
-    width="100%" height="400"
-    frameborder="0" allowfullscreen>
-  </iframe>
-</section>
-
-
-<section style="text-align: center; padding: 40px 20px;">
-  <h2 style="
-    color: #ffffff;
-    font-weight: 600;
-    font-size: 2em;
-    text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+    margin-top: 100px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
   ">
-    "Victory is reserved for those who are willing to pay its price".
-  </h2>
-  <p style="
-    margin-top: 20px;
-    color: #dddddd;
-    font-size: 1.1em;
-    font-style: italic;
-    text-shadow: 0 0 6px rgba(255, 255, 255, 0.15);
-  ">
-    AlphaScene. For the leaders, the creators, the ones who never follow.
-  </p>
-</section>
+    <h2 style="color: #fff; font-size: 1.8em; margin-bottom: 20px;">
+      🔥 Featured Gameplay
+    </h2>
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID"
+      width="100%" height="400"
+      frameborder="0" allowfullscreen>
+    </iframe>
+  </section>
 
+  <section style="text-align: center; padding: 40px 20px;">
+    <h2 style="
+      color: #ffffff;
+      font-weight: 600;
+      font-size: 2em;
+      text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+    ">
+      "Victory is reserved for those who are willing to pay its price".
+    </h2>
+    <p style="
+      margin-top: 20px;
+      color: #dddddd;
+      font-size: 1.1em;
+      font-style: italic;
+      text-shadow: 0 0 6px rgba(255, 255, 255, 0.15);
+    ">
+      AlphaScene. For the leaders, the creators, the ones who never follow.
+    </p>
+  </section>
 
   <section class="socials">
     <h2>🔗 Connect</h2>
     <a href="https://www.youtube.com/@AlphaScene" target="_blank">YouTube</a>
     <a href="https://www.tiktok.com/@alpha_scene" target="_blank">Follow on TikTok</a>
     <a href="https://www.instagram.com/AlphaScene" target="_blank">Instagram</a>
-    <a href="mailto:contact@alphascene.co.uk">Email</a>
   </section>
 
   <section class="merch">
@@ -112,3 +143,4 @@
 
 </body>
 </html>
+
